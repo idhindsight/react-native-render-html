@@ -518,9 +518,9 @@ export default class HTML extends PureComponent {
         }
 
         return customWrapper ? customWrapper(RNNodes) : (
-            <View style={this.props.containerStyle || {}}>
+            <Text style={this.props.containerStyle || {}}>
                 { RNNodes }
-            </View>
+            </Text>
         );
     }
 }
